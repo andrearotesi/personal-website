@@ -1,5 +1,7 @@
+@import url(../../assets/styles/variables.scss);
+
 .Card {
-    background-color: #dac4fe;
+    background-color: var(--liliac);
     padding: 1rem;
     margin: 1rem;
     border-radius: .5rem;

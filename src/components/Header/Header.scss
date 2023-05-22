@@ -1,10 +1,12 @@
+@import url(../../assets/styles/variables.scss);
+
 .Header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: .5rem;
     height: 1.5rem;
-    background: linear-gradient(to right, #e6cbff, #eecbff, #cbceff 60%);
+    background: var(--liliac-to-blue);
 
     a {
         margin: 0 1rem;

@@ -1,5 +1,7 @@
+@import url(../../assets/styles/variables.scss);
+
 .Footer {
-    background: linear-gradient(to right, #cccbff 50%, #cbecff, #cbffe7);
+    background: var(--liliac-to-green);
     padding: 2rem;
     text-align: center;
     position: sticky;

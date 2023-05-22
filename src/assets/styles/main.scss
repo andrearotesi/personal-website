@@ -1,12 +1,13 @@
+@import url(variables.scss);
+
 html, body {
     display: flex;
     flex-direction: column;
     height: 100%;
     margin: 0;
     
-    background-color: #fff4fd;
-    font-family: 'Merriweather', Sans-serif;
-    font-size: 16px;
+    background-color: var(--bg-color);
+    font-family: var(--font);
 }
 
 a {
