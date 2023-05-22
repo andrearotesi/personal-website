@@ -1,7 +1,7 @@
-body {
+html, body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100%;
     margin: 0;
     
     background-color: #fff4fd;
@@ -13,8 +13,19 @@ a {
     text-decoration: none;
     color: black;
     cursor: pointer;
+    font-weight: bold;
 
     &:hover {
         text-decoration: underline;
     }
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vert-spacing {
+    margin: 3rem 0;
 }
