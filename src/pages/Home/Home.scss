@@ -1,16 +1,38 @@
 .Home {
     .intro__card {
-        max-width: 40rem;
-        margin-left: -3rem;
+        max-width: 75%;
+        margin-top: -3rem;
     }
 
     .about-me-info {
-        max-width: 23rem;
-        margin-right: 3rem;
+        max-width: 75%;
     }
     
     img {
-        max-width: 325px;
+        max-width: 70%;
         border-radius: .5rem;
+        margin-top: 1rem;
+    }
+}
+
+// Large screens
+@media screen and (min-width: 650px) {
+    .Home {
+        margin: 0 1rem;
+        
+        .intro__card {
+            max-width: 40rem;
+            margin-left: -3rem;
+        }
+    
+        .about-me-info {
+            max-width: 23rem;
+            margin-right: 3rem;
+        }
+        
+        img {
+            max-width: 325px;
+            border-radius: .5rem;
+        }
     }
 }
