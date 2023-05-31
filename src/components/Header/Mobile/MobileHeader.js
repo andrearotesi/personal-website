@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './MobileHeader.scss';
 import { Link } from 'react-router-dom';
+import Socials from '../../../components/Socials/Socials';
 
 const MobileHeader = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -34,6 +35,7 @@ const MobileHeader = () => {
                             )
                         )}
                     </div>
+                    <Socials/>
                 </div>
             )}
         </div>
