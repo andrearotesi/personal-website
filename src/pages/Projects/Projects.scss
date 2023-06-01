@@ -3,7 +3,7 @@
 
     .data-wrapper {
         flex-direction: column;
-        margin: 3rem;
+        margin: 2rem;
         width: 65%;
 
         .Card {
@@ -35,6 +35,7 @@
 @media screen and (min-width: 650px) {
     .Projects {
         .data-wrapper {
+            margin: 3rem;
             flex-direction: row;
     
             .Card {

@@ -8,7 +8,11 @@ const Projects = () => {
       { projectData.map((data, index) => (
         <div className='center data-wrapper' key={ index }>
           <img src={ data.img } alt={ data.alt } />
-          <Card title={ data.label } subtitle={ data.info } />
+          <Card title={ data.label } 
+            subtitle={ data.info } 
+            link={ data.link.url }
+            linkLabel={ data.link.label }
+          />
         </div>
         )
       )}
