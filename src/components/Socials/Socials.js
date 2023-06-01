@@ -19,8 +19,8 @@ const icons = [
 const Socials = () => (
   <div className="Socials">
     {
-      icons.map(icon => (
-        <a href={icon.url} rel='noopener noreferrer'>
+      icons.map((icon, i) => (
+        <a key={i} href={icon.url} rel='noopener noreferrer'>
           <img src={icon.src} alt={icon.alt} />
         </a>
       ))

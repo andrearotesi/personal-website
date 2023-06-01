@@ -3,7 +3,6 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Home from './pages/Home/Home';
 import Projects from './pages/Projects/Projects';
-import Resume from './pages/Resume/Resume';
 import Contact from './pages/Contact/Contact';
 
 function App() {
@@ -13,7 +12,6 @@ function App() {
       <Routes>
         <Route path='/' element={ <Home/> }/>
         <Route path='/projects' element={ <Projects/> }/>
-        <Route path='/resume' element={ <Resume/> }/>
         <Route path='/contact' element={ <Contact/> }/>
       </Routes>
       <Footer/>

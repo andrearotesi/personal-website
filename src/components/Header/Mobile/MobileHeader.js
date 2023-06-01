@@ -2,6 +2,9 @@ import { useState } from 'react';
 import './MobileHeader.scss';
 import { Link } from 'react-router-dom';
 import Socials from '../../../components/Socials/Socials';
+import navigationData from '../../../data/navigation.json';
+import { handleDownload } from '../download-resume';
+
 
 const MobileHeader = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -9,13 +12,6 @@ const MobileHeader = () => {
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
-
-    const menuItems = [
-        { to: '/', label: 'Home' },
-        { to: '/projects', label: 'Projects' },
-        { to: '/resume', label: 'Résumé' },
-        { to: '/contact', label: 'Contact' },
-    ];
     
     return (
         <div>
@@ -28,10 +24,11 @@ const MobileHeader = () => {
                         close
                     </span>
                     <div className='menu-items'>
-                        { menuItems.map((item, index) => (
-                                <Link key={ index } to={ item.to } onClick={ toggleMenu }>
-                                    { item.label }
-                                </Link>
+                        { navigationData.map((data, index) => (
+                            <Link key={index} to={data.path}
+                                onClick={data.download ? handleDownload : undefined}>
+                                {data.label}
+                            </Link>
                             )
                         )}
                     </div>

@@ -1,0 +1,19 @@
+[
+    {
+        "path": "/",
+        "label": "Home"
+    },
+    {
+        "path": "/projects",
+        "label": "Projects"
+    },
+    {
+        "path": null,
+        "label": "Résumé",
+        "download": true
+    },
+    {
+        "path": "/contact",
+        "label": "Contact"
+    }
+]
