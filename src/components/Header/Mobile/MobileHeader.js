@@ -3,7 +3,7 @@ import './MobileHeader.scss';
 import { Link } from 'react-router-dom';
 import Socials from '../../../components/Socials/Socials';
 import navigationData from '../../../data/navigation.json';
-import { handleDownload } from '../download-resume';
+import { openResume } from '../open-resume';
 
 
 const MobileHeader = () => {
@@ -27,7 +27,7 @@ const MobileHeader = () => {
                         { navigationData.map((data, index) => (
                             <p onClick={ toggleMenu }>
                                 <Link key={ index } to={ data.path }
-                                    onClick={ data.download ? handleDownload : undefined }>
+                                    onClick={ data.download ? openResume : undefined }>
                                     { data.label }
                                 </Link>
                             </p>
