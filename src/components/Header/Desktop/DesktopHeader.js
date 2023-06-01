@@ -9,7 +9,7 @@ const DesktopHeader = () => {
             { navigationData.map((data, index) => (
                 <Link key={ index } to={ data.path }
                     onClick={ data.download ? openResume : undefined }>
-                    { data.label }
+                        { data.label }
                 </Link>
                 )
             )}

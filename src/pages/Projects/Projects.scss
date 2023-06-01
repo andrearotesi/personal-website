@@ -1,0 +1,51 @@
+.Projects {
+    flex-direction: column;
+
+    .data-wrapper {
+        flex-direction: column;
+        margin: 3rem;
+        width: 65%;
+
+        .Card {
+            max-width: 30rem;
+            margin-top: -1rem;
+        }
+
+        img {
+            max-width: 300px;
+            border-radius: .5rem;
+        }
+    }
+
+    .hidden-text {
+        height: 0;
+        transition: height 0.3s ease-in-out;
+
+        p {
+            margin: 0;
+        }
+
+        &.expanded {
+            height: auto;
+        }
+    }
+}
+
+// Large screens
+@media screen and (min-width: 650px) {
+    .Projects {
+        .data-wrapper {
+            flex-direction: row;
+    
+            .Card {
+                width: 30rem;
+                margin-top: 0;
+                margin-left: -2rem;
+            }
+    
+            img {
+                max-width: 325px;
+            }
+        }
+    }
+}
