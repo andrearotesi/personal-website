@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <div className="Header">
-      <Link to='/'><h3>Andrea Rotesi</h3></Link>
+      <Link to='/'><h3>⭐️ Andrea Rotesi</h3></Link>
       { isMobile ? <MobileHeader/> : <DesktopHeader/> }
     </div>
   );
