@@ -20,6 +20,7 @@
         display: block;
         margin-top: .5rem;
         text-decoration: underline;
+        font-size: .75rem;
     }
 }
 
@@ -34,6 +35,10 @@
         }
     
         h3 {
+            font-size: initial;
+        }
+
+        a {
             font-size: initial;
         }
     } 
