@@ -14,28 +14,24 @@ const MobileHeader = () => {
     };
     
     return (
-        <div>
-            <span onClick={ toggleMenu } class='burger material-symbols-outlined'>
-                menu
+        <div className={`MobileMenu ${isOpen ? 'open' : ''}`}>
+            <span onClick={toggleMenu} className='burger material-symbols-outlined'>
+                {isOpen ? 'close' : 'menu'}
             </span>
-            { isOpen && (
-                <div className='MobileMenu'>
-                    <span onClick={ toggleMenu } class='burger material-symbols-outlined'>
-                        close
-                    </span>
+            {isOpen && (
+                <section className='center'>
                     <div className='menu-items'>
-                        { navigationData.map((data, index) => (
-                            <p onClick={ toggleMenu }>
-                                <Link key={ index } to={ data.path }
-                                    onClick={ data.download ? openResume : undefined }>
-                                    { data.label }
-                                </Link>
-                            </p>
-                            )
-                        )}
+                        {navigationData.map((data, index) => (
+                        <p key={index} onClick={toggleMenu}>
+                            <Link to={data.path}
+                            onClick={data.download ? openResume : undefined}>
+                            {data.label}
+                            </Link>
+                        </p>
+                        ))}
                     </div>
-                    <Socials/>
-                </div>
+                    <Socials />
+                </section>
             )}
         </div>
     );
