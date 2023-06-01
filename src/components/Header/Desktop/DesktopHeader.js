@@ -7,9 +7,9 @@ const DesktopHeader = () => {
     return (
         <nav className='main-nav'>
             { navigationData.map((data, index) => (
-                <Link key={index} to={data.path}
-                    onClick={data.download ? handleDownload : undefined}>
-                    {data.label}
+                <Link key={ index } to={ data.path }
+                    onClick={ data.download ? handleDownload : undefined }>
+                    { data.label }
                 </Link>
                 )
             )}

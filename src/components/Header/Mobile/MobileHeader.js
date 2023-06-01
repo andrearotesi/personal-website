@@ -25,10 +25,12 @@ const MobileHeader = () => {
                     </span>
                     <div className='menu-items'>
                         { navigationData.map((data, index) => (
-                            <Link key={index} to={data.path}
-                                onClick={data.download ? handleDownload : undefined}>
-                                {data.label}
-                            </Link>
+                            <p onClick={ toggleMenu }>
+                                <Link key={ index } to={ data.path }
+                                    onClick={ data.download ? handleDownload : undefined }>
+                                    { data.label }
+                                </Link>
+                            </p>
                             )
                         )}
                     </div>
