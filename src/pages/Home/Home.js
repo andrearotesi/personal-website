@@ -26,7 +26,7 @@ const Home = () => {
       </section>
 
       <section className='center vert-spacing'>
-        <p className='about-me-info'>
+        <div className='about-me-info'>
           <h3>Who am I?</h3>
           Ciao! I'm Andrea, a Software Engineer with a vibrant passion for coding and design. 
           I love to push my limits with coding projects and I study to pursue my dream of becoming an amazing coder!
@@ -34,7 +34,7 @@ const Home = () => {
           <h3>What do I do?</h3>
           Many things! After my nine-to-five, I work on my bachelor's in computer science or on my projects, and I
           go on hikes. I love mountains and skiing, as well as cooking and wine tasting!
-        </p>
+        </div>
         <img src={ mountainImg } alt='Carezza valley, Alto Adige, ski'/>
       </section>
       
