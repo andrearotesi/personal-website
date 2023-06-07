@@ -7,7 +7,8 @@ import mountainImg from '../../assets/images/carezza-min.png';
 const Home = () => {
   const cardTitle = (
     <span>
-      Software Engineer @<a href='https://www.aodocs.com/'><u>AODocs</u></a>
+      Software Engineer 
+      @<a href='https://www.aodocs.com/'><u>AODocs</u></a>
       <br/>
       CS Student
       <br/>
