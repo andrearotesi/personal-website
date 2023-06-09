@@ -8,7 +8,7 @@ const Home = () => {
   const cardTitle = (
     <span>
       Software Engineer 
-      @<a href='https://www.aodocs.com/'><u>AODocs</u></a>
+      @<a href='https://www.revevol.com/'><u>Revevol</u></a>
       <br/>
       CS Student
       <br/>
