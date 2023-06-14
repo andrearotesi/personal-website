@@ -1,7 +1,7 @@
-import ngImg from '../assets/images/ng-cert.png';
-import blobImg from '../assets/images/blob.png';
-import engImg from '../assets/images/handbook-preview.png';
-import artImg from '../assets/images/panda-mech.png';
+import ngImg from '../assets/images/ng-cert.webp';
+import blobImg from '../assets/images/blob.webp';
+import engImg from '../assets/images/handbook-preview.webp';
+import artImg from '../assets/images/panda-mech.webp';
 
 export const projectData = [
     {

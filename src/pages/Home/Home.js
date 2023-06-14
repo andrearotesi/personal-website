@@ -1,7 +1,7 @@
 import Card from '../../components/Card/Card'
 import './Home.scss';
-import portraitImg from '../../assets/images/portrait.png';
-import mountainImg from '../../assets/images/carezza-min.png';
+import portraitImg from '../../assets/images/portrait.webp';
+import mountainImg from '../../assets/images/carezza-min.webp';
 
 
 const Home = () => {
