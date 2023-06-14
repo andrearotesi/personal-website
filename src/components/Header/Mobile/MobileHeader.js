@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import Socials from '../../../components/Socials/Socials';
 import navigationData from '../../../data/navigation.json';
 import { openResume } from '../open-resume';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
 
 const MobileHeader = () => {
@@ -12,19 +14,14 @@ const MobileHeader = () => {
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
-
-    const menuButton =
-        <span onClick={toggleMenu} className='burger material-symbols-outlined'>
-            { isOpen ? 'close' : 'menu' }
-        </span>;
     
     return (
         <div>
-            { menuButton }
+            <MenuIcon onClick={toggleMenu} className='toggle'/>
             <div className={`MobileMenu ${isOpen ? 'open' : ''}`}>
                 {isOpen && (
                     <div>
-                        { menuButton }
+                        <CloseIcon onClick={toggleMenu} className='toggle'/>
                         <section className='center'>
                             <div className='menu-items'>
                                 {navigationData.map((data, index) => (
