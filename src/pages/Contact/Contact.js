@@ -6,9 +6,9 @@ const Contact = () => {
     <div className='Contact'>
       <div className='body'>
         <h1>Let's talk tech!</h1>
-        <h3>
+        <h2>
           Want to reach out to me? I'm always available for a friendly chat.
-        </h3>
+        </h2>
         <span>Here's a list of some things I like to talk about:</span>
         <ul>
           <li>Tech, programming, frameworks, web development</li>

@@ -7,7 +7,7 @@ const Card = (props) => {
   return (
     <div className="Card">
       <h1>{ title }</h1>
-      <h3>{ subtitle }</h3>
+      <h2>{ subtitle }</h2>
       { link && <a className='link' href={ link }>{ linkLabel ? linkLabel : link }</a> }
     </div>
   );
