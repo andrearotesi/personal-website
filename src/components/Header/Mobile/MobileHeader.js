@@ -12,27 +12,35 @@ const MobileHeader = () => {
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+
+    const menuButton =
+        <span onClick={toggleMenu} className='burger material-symbols-outlined'>
+            { isOpen ? 'close' : 'menu' }
+        </span>;
     
     return (
-        <div className={`MobileMenu ${isOpen ? 'open' : ''}`}>
-            <span onClick={toggleMenu} className='burger material-symbols-outlined'>
-                {isOpen ? 'close' : 'menu'}
-            </span>
-            {isOpen && (
-                <section className='center'>
-                    <div className='menu-items'>
-                        {navigationData.map((data, index) => (
-                        <p key={index} onClick={toggleMenu}>
-                            <Link to={data.path}
-                            onClick={data.download ? openResume : undefined}>
-                            {data.label}
-                            </Link>
-                        </p>
-                        ))}
+        <div>
+            { menuButton }
+            <div className={`MobileMenu ${isOpen ? 'open' : ''}`}>
+                {isOpen && (
+                    <div>
+                        { menuButton }
+                        <section className='center'>
+                            <div className='menu-items'>
+                                {navigationData.map((data, index) => (
+                                <p key={index} onClick={toggleMenu}>
+                                    <Link to={data.path}
+                                    onClick={data.download ? openResume : undefined}>
+                                    {data.label}
+                                    </Link>
+                                </p>
+                                ))}
+                            </div>
+                            <Socials />
+                        </section>
                     </div>
-                    <Socials />
-                </section>
-            )}
+                )}
+            </div>
         </div>
     );
 }
