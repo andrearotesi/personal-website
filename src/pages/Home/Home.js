@@ -3,6 +3,7 @@ import './Home.scss';
 import portraitImg from '../../assets/images/portrait.webp';
 import mountainImg from '../../assets/images/carezza-min.webp';
 
+const isMobile = window.innerWidth <= 650;
 
 const Home = () => {
   const cardTitle = (
@@ -20,7 +21,9 @@ const Home = () => {
   return (
     <div className='Home'>
       <section className='center vert-spacing'>
-        <img src={ portraitImg } alt='Andrea Rotesi, SWE, CS Student'/>
+        <img src={ portraitImg } alt='Andrea Rotesi, SWE, CS Student'
+          width={ isMobile ? '455' : '325' }
+          height={ isMobile ? '313' : '373' } />
         <div className='intro__card'>
           <Card title={ cardTitle } subtitle={ cardSubtitle }/>
         </div>
@@ -36,7 +39,9 @@ const Home = () => {
           Many things! After my nine-to-five, I work on my bachelor's in computer science or on my projects, and I
           go on hikes. I love mountains and skiing, as well as cooking and wine tasting!
         </div>
-        <img src={ mountainImg } alt='Carezza valley, Alto Adige, ski'/>
+        <img src={ mountainImg } alt='Carezza valley, Alto Adige, ski'
+          width={ isMobile ? '455' : '325' }
+          height={ isMobile ? '200' : '240' }/>
       </section>
       
     </div>
