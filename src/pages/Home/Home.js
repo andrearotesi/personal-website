@@ -23,7 +23,7 @@ const Home = () => {
       <section className='center vert-spacing'>
         <img src={ portraitImg } alt='Andrea Rotesi, SWE, CS Student'
           width={ isMobile ? '455' : '325' }
-          height={ isMobile ? '313' : '373' } />
+          height={ isMobile ? '300' : '373' } />
         <div className='intro__card'>
           <Card title={ cardTitle } subtitle={ cardSubtitle }/>
         </div>
