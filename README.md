@@ -14,3 +14,6 @@ Styling
 
 # ⭐️ Layout
 The entire webapp is mobile first. Every page is carefully optimized and some features are even mobile-exclusive, such as the navigation menu. Once again, everything is done by hand.
+
+# ⭐️ Performance
+Performance was a key factor while creating my website. According to lighthouse, andrearotesi.com has scored 93/100 for desktop performance and 99/100 for mobile performance!
