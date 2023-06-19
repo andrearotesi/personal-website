@@ -3,6 +3,8 @@ Welcome to my portfolio's GitHub Repository!
 My code is publicly available, if you happen to be curious on how I did things.
 This is the rewrite of my entire website, switching from Angular to React.
 
+Deployed on [andrearotesi.com](https://andrearotesi.com/)
+
 
 # ⭐️ Tech stack
 React 18.2.0
