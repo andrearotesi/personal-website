@@ -12,12 +12,13 @@ const Projects = () => {
           <img src={ data.img } alt={ data.alt }
             width={ isMobile ? '300' : '325' }
             height={ isMobile ? '220' : '240' } />
-          <Card title={ data.label } 
+          <Card date={ data.date }
+            title={ data.label } 
             subtitle={ data.info } 
             link={ data.link.url }
             linkLabel={ data.link.label }
           />
-        </div>
+          </div>
         )
       )}
     </div>
