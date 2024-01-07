@@ -8,12 +8,10 @@ const isMobile = window.innerWidth <= 650;
 const Home = () => {
   const cardTitle = (
     <span>
-      Software Engineer 
+      Full Stack Engineer 
       @<a href='https://www.aodocs.com/'><u>AODocs</u></a>
       <br/>
       CS Student
-      <br/>
-      Mentor
     </span>
   );
   const cardSubtitle = 'JS & CSS lover';
@@ -32,9 +30,10 @@ const Home = () => {
       <section className='center vert-spacing'>
         <div className='about-me-info'>
           <h3>Who am I?</h3>
-          Ciao! I'm Andrea, a Software Engineer with a vibrant passion for coding and design. 
-          I love to push my limits with coding projects and I study to pursue my dream of becoming an amazing coder!
-
+          Ciao! I'm Andrea, a Full Stack Engineer with a vibrant passion for coding, design and travelling. I love to push my limits
+          with coding projects and I always work hard to pursue my dream of becoming an amazing coder.
+          My preferred technologies are Angular and React. I also love CSS for some reason.
+          
           <h3>What do I do?</h3>
           Many things! After my nine-to-five, I work on my bachelor's in computer science or on my projects, and I
           go on hikes. I love mountains and skiing, as well as cooking and wine tasting!
